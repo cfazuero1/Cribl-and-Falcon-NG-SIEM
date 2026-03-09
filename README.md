@@ -62,7 +62,7 @@ From your screenshots, the important configuration elements are:
 
     -   `facilityName = local5`
 
-    -   `host = bmmau`
+    -   `host = otlab`
 
 ### Cribl source
 
