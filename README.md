@@ -1,4 +1,4 @@
-Lab: Security Telemetry Optimization Lab: Reducing Falcon NG-SIEM Ingestion Costs with Cribl Stream
+Security Telemetry Optimization Lab: Reducing Falcon NG-SIEM Ingestion Costs with Cribl Stream
 ================================================
 
 1\. Objective
