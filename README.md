@@ -6,11 +6,6 @@ Lab: Security Telemetry Optimization Lab: Reducing Falcon NG-SIEM Ingestion Cost
 
 The goal of this lab is to validate an end-to-end detection pipeline where Suricata detects suspicious network activity on the local host, forwards alerts through syslog/rsyslog to Cribl, and then pushes the events into Falcon Next-Gen SIEM for search and analysis.
 
-The diagram below illustrates a security telemetry pipeline designed to detect network threats while reducing SIEM ingestion costs. On the left, a Linux host running Suricata IDS monitors network traffic and detects suspicious activity or attacks. This host also communicates with an Azure Virtual Machine, representing infrastructure in a cloud environment. When Suricata generates alerts, they are forwarded via syslog to Cribl Stream, which acts as the log processing and optimization layer. Cribl processes the incoming alerts by applying filtering, suppression, and sampling techniques, reducing duplicate or low-value events to control the amount of data sent to the SIEM and optimize ingestion costs. After this processing, the refined alerts are forwarded to CrowdStrike Falcon Next-Gen SIEM, where they are indexed and analyzed. Finally, security analysts in the SOC environment interact directly with Falcon Next-Gen SIEM, using it to investigate alerts, perform threat hunting, and monitor security events across the environment.
-
-<img width="1536" height="1024" alt="ChatGPT Image Mar 10, 2026, 08_38_21 AM" src="https://github.com/user-attachments/assets/493b3cde-d41f-4fad-8dde-d3e3b98ca115" />
-
-
 This lab proves five things:
 
 1.  Suricata is generating IDS alerts.
@@ -27,6 +22,10 @@ This lab proves five things:
 
 2\. Architecture
 ----------------
+
+The diagram below illustrates a security telemetry pipeline designed to detect network threats while reducing SIEM ingestion costs. On the left, a Linux host running Suricata IDS monitors network traffic and detects suspicious activity or attacks. This host also communicates with an Azure Virtual Machine, representing infrastructure in a cloud environment. When Suricata generates alerts, they are forwarded via syslog to Cribl Stream, which acts as the log processing and optimization layer. Cribl processes the incoming alerts by applying filtering, suppression, and sampling techniques, reducing duplicate or low-value events to control the amount of data sent to the SIEM and optimize ingestion costs. After this processing, the refined alerts are forwarded to CrowdStrike Falcon Next-Gen SIEM, where they are indexed and analyzed. Finally, security analysts in the SOC environment interact directly with Falcon Next-Gen SIEM, using it to investigate alerts, perform threat hunting, and monitor security events across the environment.
+
+<img width="1536" height="1024" alt="ChatGPT Image Mar 10, 2026, 08_38_21 AM" src="https://github.com/user-attachments/assets/493b3cde-d41f-4fad-8dde-d3e3b98ca115" />
 
 The pipeline you built is:
 
