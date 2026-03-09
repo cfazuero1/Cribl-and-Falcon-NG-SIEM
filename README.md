@@ -6,6 +6,9 @@ Lab: Security Telemetry Optimization Lab: Reducing Falcon NG-SIEM Ingestion Cost
 
 The goal of this lab is to validate an end-to-end detection pipeline where Suricata detects suspicious network activity on the local host, forwards alerts through syslog/rsyslog to Cribl, and then pushes the events into Falcon Next-Gen SIEM for search and analysis.
 
+<img width="1536" height="1024" alt="ChatGPT Image Mar 10, 2026, 08_38_21 AM" src="https://github.com/user-attachments/assets/493b3cde-d41f-4fad-8dde-d3e3b98ca115" />
+
+
 This lab proves five things:
 
 1.  Suricata is generating IDS alerts.
